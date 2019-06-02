@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css">
+    <title>animation-player</title>
+
+</head>
+
+<body>
+    <main class="main">
+        <div class="main-column">
+            <div class="frames" id="idFrames">
+            </div>
+            <button type="button" class="btn" id="btn_add-frame">Add frame</button>
+            <button type="button" class="btn" id="btn_delete-frame">Delete frame</button>
+            <button type="button" class="btn" id="btn_copy-frame">Copy frame</button>
+        </div>
+        <div class="main-column">
+            <div class="canvas" id="canvas">
+                <div class="first-line">
+                    <div class="first-line_figure-1" data-figure id="figure1" id="figure1"></div>
+                    <div class="first-line_figure-2" data-figure id="figure2" id="figure2"></div>
+                    <div class="first-line_figure-3" data-figure id="figure3" id="figure3"></div>
+                </div>
+                <div class="second-line">
+                    <div class="second-line_figure-1" data-figure id="figure4" id="figure4"></div>
+                    <div class="second-line_figure-2" data-figure id="figure5" id="figure5"></div>
+                    <div class="second-line_figure-3" data-figure id="figure6" id="figure6"></div>
+                </div>
+                <div class="third-line">
+                    <div class="third-line_figure-1" data-figure id="figure7" id="figure7"></div>
+                    <div class="third-line_figure-2" data-figure id="figure8" id="figure8"></div>
+                    <div class="third-line_figure-3" data-figure id="figure9" id="figure9"></div>
+                </div>
+            </div>
+            <div class="colors">
+                <div class="choose_color">Current color: <div id="current_color"></div>
+                </div>
+                <ul class="colors_list" id="colors_list">
+                    <li style="background-color: red" class="colors_list_red" data-color></li>
+                    <li style="background-color: yellow" class="colors_list_yellow" data-color></li>
+                    <li style="background-color: green" class="colors_list_green" data-color></li>
+                    <li style="background-color: blue" class="colors_list_blue" data-color></li>
+                    <li style="background-color: black" class="colors_list_black" data-color></li>
+                    <li style="background-color: white" class="colors_list_white" data-color></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-column">
+            <canvas id="animationCanvas" width="300" height="300"></canvas>
+            <input type="range" min="1" max="24" step="1" value="1" id="range">
+            <div class="showFps">
+                <div id="showFps">1</div>fps
+                </div>
+                <div class="controlCanvas">
+                    <button id="btn_start_animation" type='button'>Start animation</button>
+                    <button id="btn_stop_animation" type='button' disabled>Stop animation</button>
+                    <button id="btn_full_screen_animation" type='button'>Full screen</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./dist/bundle.js"></script>
+</body>
+
+</html>

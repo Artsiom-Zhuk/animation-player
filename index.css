@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.active {
+  outline: 2px solid red;
+  margin: 10px 10px 0;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-column canvas {
+  border: 1px solid black;
+  margin: 100px 100px;
+}
+
+.frames {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 15px;
+  outline: 2px solid black;
+  max-height: 578px;
+  height: 580px;
+  min-width: 225px;
+  overflow-y: scroll;
+}
+
+.frames .frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 10px 0;
+  width: 180px;
+  min-height: 180px;
+}
+
+.frames .frame_line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.frames .frame_line_figure-1 {
+  background-color: gray;
+  width: 60px;
+  height: 60px;
+}
+
+.frames .frame_line_figure-2 {
+  background-color: gray;
+  width: 60px;
+  height: 60px;
+}
+
+.frames .frame_line_figure-3 {
+  background-color: gray;
+  width: 60px;
+  height: 60px;
+}
+
+.frames .frame_line_figure-4 {
+  background-color: gray;
+  width: 60px;
+  height: 60px;
+}
+
+.frames .frame_line_figure-5 {
+  background-color: gray;
+  width: 60px;
+  height: 60px;
+}
+
+.frames .frame_line_figure-6 {
+  background-color: gray;
+  width: 60px;
+  height: 60px;
+}
+
+.frames .frame_line_figure-7 {
+  background-color: gray;
+  width: 60px;
+  height: 60px;
+}
+
+.frames .frame_line_figure-8 {
+  background-color: gray;
+  width: 60px;
+  height: 60px;
+}
+
+.frames .frame_line_figure-9 {
+  background-color: gray;
+  width: 60px;
+  height: 60px;
+}
+
+.btn {
+  margin-top: 20px;
+  width: 120px;
+  padding: 5px 25px;
+  font-size: 10px;
+  font-weight: 600;
+  background-color: transparent;
+  border: 3px solid black;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: #26a130;
+}
+
+.canvas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  visibility: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+  height: 300px;
+  outline: 1px solid blue;
+  margin-top: 100px;
+}
+
+.canvas .first-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: row;
+      -ms-flex-pack: row;
+          justify-content: row;
+  width: 100%;
+  height: 100px;
+}
+
+.canvas .first-line_figure-1, .canvas .first-line_figure-2, .canvas .first-line_figure-3 {
+  width: 100px;
+  height: 100%;
+  background-color: gray;
+  outline: 1px solid blue;
+}
+
+.canvas .second-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: row;
+      -ms-flex-pack: row;
+          justify-content: row;
+  width: 100%;
+  height: 100px;
+  background-color: green;
+}
+
+.canvas .second-line_figure-1, .canvas .second-line_figure-2, .canvas .second-line_figure-3 {
+  width: 100px;
+  height: 100%;
+  background-color: gray;
+  outline: 1px solid blue;
+}
+
+.canvas .third-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: row;
+      -ms-flex-pack: row;
+          justify-content: row;
+  width: 100%;
+  height: 100px;
+  background-color: blue;
+}
+
+.canvas .third-line_figure-1, .canvas .third-line_figure-2, .canvas .third-line_figure-3 {
+  width: 100px;
+  height: 100%;
+  background-color: gray;
+  outline: 1px solid blue;
+}
+
+.colors {
+  margin-top: 50px;
+}
+
+.colors .choose_color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  padding: 10px 15px;
+}
+
+.colors_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.colors_list li {
+  margin-top: 10px;
+  width: 100px;
+  height: 25px;
+  outline: 1px solid grey;
+}
+
+.colors_list li:first-child {
+  margin-top: 0px;
+}
+
+.showFps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.showFps div {
+  margin-right: 5px;
+}
+
+.controlCanvas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 150px;
+  margin-top: 30px;
+}
+
+.controlCanvas button {
+  padding: 10px 20px;
+}
+/*# sourceMappingURL=index.css.map */
